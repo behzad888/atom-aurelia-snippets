@@ -1,0 +1,21 @@
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "describe":
+    "prefix": "bootstrapper"
+    "body": """
+    describe('${1:description}', function() {
+    \t${0:// body...}
+    });
+    import {LogManager} from 'aurelia-framework';
+    import {ConsoleAppender} from 'aurelia-logging-console';
+    LogManager.addAppender(new ConsoleAppender());
+    LogManager.setLevel(LogManager.logLevel.debug);
+    export function configure(aurelia) {
+    \taurelia.use
+    \t\t.defaultBindingLanguage()
+    \t\t.defaultResources()
+    \t\t.history()
+    \t\t.router()
+    \t\t.eventAggregator();
+    \taurelia.start().then(()=>aurelia.setRoot('${0:app}',${1:document.body}));
+    }
+    """
