@@ -1,0 +1,44 @@
+ ".source.ts,.source.tsx":
+  "Aurelia bootstrapper class":
+    "prefix": "bootstrapper"
+    "description": "Aurelia explicit standard configuration export function snippet"
+    "body": """
+    import {LogManager} from 'aurelia-framework';
+    import {ConsoleAppender} from 'aurelia-logging-console';
+    \nLogManager.addAppender(new ConsoleAppender());
+    LogManager.setLevel(LogManager.logLevel.debug);
+    \nexport function configure(aurelia: Aurelia): void {
+    \taurelia.use
+    \t\t.defaultBindingLanguage()
+    \t\t.defaultResources()
+    \t\t.history()
+    \t\t.router()
+    \t\t.eventAggregator();
+    \taurelia.start().then(()=>aurelia.setRoot('${0:app}',${1:document.body}));
+    }
+    """
+  "Aurelia configuration function":
+    "prefix": "configuration"
+    "description": "Aurelia standard configuration export function snippet"
+    "body": """
+    import {Aurelia} from 'aurelia-framework';
+    export function configure(aurelia: Aurelia): void
+    {
+    \taurelia.use
+    \t\t.standardConfiguration()
+    \t\t.developmentLogging()
+    \n\taurelia.start().then(()=>aurelia.setRoot());
+    }
+    """
+  "feature":
+    "prefix": "feature"
+    "description": "Aurelia install feature snippet"
+    "body": """
+    .feature('${0:feature-name}');
+    """
+  "plugin":
+    "prefix": "plugin"
+    "description": "Aurelia install plugin snippet"
+    "body": """
+    .plugin('${3:plugin-name}', ${1:config} => { $0 });
+    """
