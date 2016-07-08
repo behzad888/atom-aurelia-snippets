@@ -1,6 +1,6 @@
 ".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "describe":
-    "prefix": "bootstrapper"
+    "prefix": "configuration"
     "description": "Aurelia standard configuration export function snippet"
     "body": """
     export function configure(aurelia)
