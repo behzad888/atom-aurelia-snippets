@@ -1,12 +1,13 @@
 ".source.js, .source.jsx, .source.ts, .source.js-semantic":
   "describe":
     "prefix": "bootstrapper"
+    "description": "Aurelia explicit standard configuration export function snippet"
     "body": """
     import {LogManager} from 'aurelia-framework';
     import {ConsoleAppender} from 'aurelia-logging-console';
-    LogManager.addAppender(new ConsoleAppender());
+    \nLogManager.addAppender(new ConsoleAppender());
     LogManager.setLevel(LogManager.logLevel.debug);
-    export function configure(aurelia) {
+    \nexport function configure(aurelia) {
     \taurelia.use
     \t\t.defaultBindingLanguage()
     \t\t.defaultResources()

@@ -1,0 +1,14 @@
+".source.js, .source.jsx, .source.ts, .source.js-semantic":
+  "describe":
+    "prefix": "bootstrapper"
+    "description": "Aurelia standard configuration export function snippet"
+    "body": """
+    export function configure(aurelia)
+    {
+    \taurelia.use
+    \t\t.standardConfiguration()
+    \t\t.developmentLogging()
+    \naurelia.start().then(()=>aurelia.setRoot());
+    }
+    }
+    """
