@@ -1,7 +1,7 @@
 {
   "name": "aurelia-snippets",
   "main": "./lib/aurelia-snippets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Aurelia Snippets for Atom",
   "repository": "https://github.com/behzad888/atom-aurelia-snippets",
   "license": "MIT",
