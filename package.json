@@ -1,19 +1,16 @@
 {
-  "name": "aurelia-snippets",
-  "main": "./lib/aurelia-snippets",
-  "version": "0.0.3",
+  "name": "atom-aurelia-snippets",
+   "author": {
+    "name": "Behzad abbasi(behzad888)",
+    "email": "behzad88.2012@gmail.com",
+    "url": "https://github.com/behzad888"
+  },
+  "version": "0.0.4",
   "description": "Aurelia Snippets for Atom",
   "repository": "https://github.com/behzad888/atom-aurelia-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "devDependencies": {
-    "grunt": "0.4.2",
-    "grunt-cli": "0.1.11",
-    "grunt-lintspaces": "0.3.1"
-  },
-  "scripts": {
-    "test": "grunt"
-  }
+  "devDependencies": {  }
 }

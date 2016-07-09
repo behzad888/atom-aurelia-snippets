@@ -1,4 +1,4 @@
- ".source.ts,.source.tsx":
+ ".source.ts, .source.tsx":
   "Aurelia bootstrapper class":
     "prefix": "bootstrapper"
     "description": "Aurelia explicit standard configuration export function snippet"
