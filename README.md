@@ -1,5 +1,3 @@
-#Comming soon...
-
 # Aurelia Snippets for Atom
 This extension for Atom adds snippets for Aurelia for TypeScript, Javascript and HTML.
 
