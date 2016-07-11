@@ -139,7 +139,7 @@
     "body": """
     @computedFrom('${0:first}', '${1:two}')
     get ${full}() {
-      \t$0
+      \t$2
     }
     """
   "Basic Route Configuration":
@@ -151,7 +151,7 @@
     \t\tthis.router = router;
     t\tconfig.title = '${1:Title}';
     \t\tconfig.map([
-    \t\t\t{ route: ${2:address},       name: '${3:name}',       moduleId: '${4:url}' ${5:, nav=true} },  title: '${6:title}'$7
+    \t\t\t{ route: ${2:address}, name: '${3:name}', moduleId: '${4:url}' ${5:, nav=true} },  title: '${6:title}' $7
     \t\t]);
     }
     """
@@ -160,7 +160,7 @@
     "description": "Aurelia canActivate screen lifecycle function snippet"
     "body": """
     canActivate(${0:params}, ${1:routeConfig}, $navigationInstruction) {
-      \t$0
+      \t$2
     }
     """
   "CanDeactivate Screen Lifecycle":
@@ -176,7 +176,7 @@
     "description": "Aurelia activate screen lifecycle function snippet"
     "body": """
     activate(${0:params}, ${1:routeConfig}, $navigationInstruction) {
-      \t$0
+      \t$2
     }
     """
   "Deactivate Screen Lifecycle":
