@@ -1,5 +1,5 @@
 # Aurelia Snippets for Atom
-This extension for Atom adds snippets for Aurelia for TypeScript, Javascript and HTML.
+This extension for Atom adds snippets for Aurelia for TypeScript and Javascript.
 
 ## Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
@@ -22,21 +22,6 @@ canActivate, activate, canDeactivate, deactivate // Aurelia screen lifecycle
 customAttribute        // Aurelia customAttribute Decorator
 valueChanged           // creates an Aurelia valueChanged function
 subscribe              // creates an Aurelia event aggregator subscribe function
-```
-
-##HTML Snippets
-HTML language:
-``` html
-if                   //    if.bind="expression"
-with                 //    with.bind="expression"
-value                //    value.bind="expression"
-input                //    input.bind="expression"
-href                 //    href.bind="expression"
-click.delegate       //    click.delegate="delegate"
-click.trigger        //    click.trigger="trigger"
-repeat.for           //    rrepeat.for="item of list"    
-value.two-way, value.one-way, value.one-time // value.two-way="binding"
-and etc.
 ```
 
 ##JavaScript Snippets
