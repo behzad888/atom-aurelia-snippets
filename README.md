@@ -61,9 +61,5 @@ subscribe              // creates an Aurelia event aggregator subscribe function
 ##Install
 Go to `Atom > Preferences...` then search for Aurelia Snippets in Packages tab. Restart atom.
 ```
-$ cd ~/.atom/packages
-$ git clone https://github.com/behzad888/atom-aurelia-snippets.git
-$ cd atom-aurelia-snippets
-$ apm install
-$ apm link
+$ apm install atom-aurelia-snippets
 ```
