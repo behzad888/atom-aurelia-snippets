@@ -149,12 +149,13 @@
     "description": "Aurelia basic route configuration class snippet"
     "body": """
     import {RouterConfiguration, Router} from 'aurelia-router';
-    export class ${0:App}() {
+    export class ${0:App} {
+    \n\trouter: Router
     \n\tconfigureRouter(config: RouterConfiguration, router: Router): void {
     \t\tthis.router = router;
-    t\tconfig.title = '${1:Title}';
+    \t\tconfig.title = '${1:Title}';
     \t\tconfig.map([
-    \t\t\t{ route: ${2:address}, name: '${3:name}', moduleId: '${4:url}' ${5:, nav=true} },  title: '${6:title}' $7
+    \t\t\t{ route: ${2:address}, name: '${3:name}', moduleId: '${4:url}' ${5:, nav=true},  title: '${6:title}'} $7
     \t\t]);
     }
     """
